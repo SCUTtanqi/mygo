@@ -1,7 +1,7 @@
 package main
 
 import (
-	"controllers"
+	"beeblog/controllers"
 	"github.com/astaxie/beego"
 )
 

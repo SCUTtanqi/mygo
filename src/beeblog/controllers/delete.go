@@ -11,7 +11,7 @@ type DeleteController struct {
 }
 
 func (this *DeleteController) Get() {
-	id, _ := strconv.Atoi(this.Ctx.Params[":id"])
+	id, _ := strconv.Atoi(this.Ctx.Input.Param(":id"))
 	models.DelBlog(models.GetBlog(id))
 	this.Ctx.Redirect(302, "/")
 }
