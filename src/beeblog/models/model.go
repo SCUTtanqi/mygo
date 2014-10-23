@@ -16,7 +16,7 @@ type Blog struct {
 
 func GetLink() beedb.Model {
 	beedb.OnDebug = true
-	db, err := sql.Open("mymysql", "test/root/123456")
+	db, err := sql.Open("mymysql", "beeblog/root/root")
 	if err != nil {
 		panic(err)
 	}
