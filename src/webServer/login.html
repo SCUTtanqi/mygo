@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>google go ≤‚ ‘</title>
+</head>
+<body>
+<form enctype="multipart/form-data" action="http://127.0.0.1:9090/login" method="post">
+	<p align=center>
+	username:<input type="text" name="username"><br/><!--test the notes-->
+	password:<input type="password" name="password"><br/><!--hr/-->
+	<input type="radio" name="gender" value="1">male
+	<input type="radio" name="gender" value="2">female<br/>
+	<input type="checkbox" name="interest" value="football" >football
+	<input type="checkbox" name="interest" value="basketball" >basketball
+	<input type="checkbox" name="interest" value="tennis" >tenniss<br/>
+	<input type="hidden" name="token" value="{{.}}" >
+	<input type="file" name="uploadfile" ><br/><!--hr/-->
+	<input type="submit" value="login">
+	</p>
+</form>
+</body>
+</html>

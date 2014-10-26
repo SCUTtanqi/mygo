@@ -8,15 +8,15 @@ import (
 )
 
 type Blog struct {
-	Id int `PK`
-	Title string
+	Id      int `PK`
+	Title   string
 	Content string
 	Created time.Time
 }
 
 func GetLink() beedb.Model {
 	beedb.OnDebug = true
-	db, err := sql.Open("mymysql", "beeblog/root/root")
+	db, err := sql.Open("mymysql", "beeblog/root/123456")
 	if err != nil {
 		panic(err)
 	}
@@ -29,7 +29,7 @@ func GetLink() beedb.Model {
 func GetAll() (blogs []Blog) {
 	db := GetLink()
 	db.FindAll(&blogs)
-	
+
 	return
 }
 
