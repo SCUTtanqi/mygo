@@ -2,9 +2,10 @@
 
 <head>
 <title>»¨µêÖ÷Ò³</title>
+<script src="myjs.js"></script>
 </head>
 
-<body>
+<body onload="initBottomStatus()">
 
 <table border=0 align=center cellspacing=0 cellpadding=20 id="flowerTable">
 
@@ -13,16 +14,14 @@
 </tr>
 
 <tr bgcolor=red>
-<td onclick='insertPicToRow("images/rose.png","rose",2)'>Ãµ¹å</td><td>°®Çé</td><td>12</td>
+<td onclick='clickBottom(1,"images/rose.png","rose")'>Ãµ¹å</td><td>°®Çé</td><td>12</td>
 </tr>
 
 <tr bgcolor=yellow>
-<td onclick='insertPicToRow("images/carnation.png","carnation",4)'>¿µÄËÜ°</td><td>Ä¸°®</td><td>12</td>
+<td onclick='clickBottom(2,"images/carnation.png","carnation")'>¿µÄËÜ°</td><td>Ä¸°®</td><td>12</td>
 </tr>
 
 </table>
-
-<script src="myjs.js"></script>
 
 </body>
 </html>
