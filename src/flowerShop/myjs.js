@@ -12,8 +12,10 @@ function initBottomStatus()
 	{
 		bottomStatus[i] = false;
 	}
+	/*
 	alert("<p>rowCount:"+rowCount+"</p>");
 	alert("<p>cellCount:"+cellCount+"</p>");
+	*/
 }
 
 //bottomNum表示第几个按钮，从1开始
@@ -45,8 +47,9 @@ function insertPicToRow(imgSrc,imgAlt,rowNum)
 {
 	var flowerTable=document.getElementById("flowerTable");
 	var tr1=flowerTable.insertRow(rowNum);
+	tr1.align="center";
 	var td1=tr1.insertCell(-1);
-	td1.colspan="3";
+	td1.colSpan=cellCount;
 	var img1=document.createElement("img");
 	img1.src=imgSrc;
 	img1.alt=imgAlt;
