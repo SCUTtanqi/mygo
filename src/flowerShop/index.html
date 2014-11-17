@@ -1,12 +1,18 @@
+<!DOCTYPE html>
 <html>
 
 <head>
 <title>»¨µêÖ÷Ò³</title>
-<script src="myjs.js"></script>
+<script src="jquery/jquery-1.11.1.min.js"></script>
 <script src="StackBlur.js" language="javascript"></script>
+<script src="myjs.js"></script>
 </head>
 
-<body onload="initBottomStatus()">
+<body>
+
+<canvas id="canvas1"></canvas>
+
+<canvas id="canvas2"></canvas>
 
 <table border=0 align=center cellspacing=0 cellpadding=20 width="80%" id="flowerTable">
 
@@ -15,11 +21,19 @@
 </tr>
 
 <tr bgcolor=red align=center>
-<td onclick='clickBottom(1,"images/rose.png","rose")'>Ãµ¹å</td><td>°®Çé</td><td>12</td>
+<td id="bottom1">Ãµ¹å</td><td>°®Çé</td><td>12</td>
+</tr>
+
+<tr align="center">
+<td colspan=3><img src="images/rose.png" id="picture1" alt="rose" width="100%" /></td>
 </tr>
 
 <tr bgcolor=yellow align=center>
-<td onclick='clickBottom(2,"images/carnation.png","carnation")'>¿µÄËÜ°</td><td>Ä¸°®</td><td>12</td>
+<td id="bottom2">¿µÄËÜ°</td><td>Ä¸°®</td><td>12</td>
+</tr>
+
+<tr align="center">
+<td colspan=3><img src="images/carnation.png" id="picture2" alt="carnation" width="100%" /></td>
 </tr>
 
 </table>
